@@ -61,7 +61,9 @@ public class HomePage extends BasePage
 
    public void selectMaximumPrice(String text)
    {
-       selectElementByText(maxPrice, text);
+       if(maxPrice != null) {
+           selectElementByText(maxPrice, text);
+       }
    }
 
    public void selectPropertyType(String text)
