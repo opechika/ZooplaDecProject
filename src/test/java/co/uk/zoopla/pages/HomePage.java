@@ -52,7 +52,11 @@ public class HomePage extends BasePage
 
    public void selectMinimumPrice(String text)
    {
-       selectElementByText(minPrice, text);
+       if(minPrice != null)
+       {
+           selectElementByText(minPrice, text);
+       }
+
    }
 
    public void selectMaximumPrice(String text)
